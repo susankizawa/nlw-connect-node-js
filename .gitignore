@@ -1,5 +1,13 @@
+# Node.js and environment variables
 node_modules
 package-lock.json
-*.http
 .env*
+
+# REST Client
+*.http
+
+# Code editor settings
 .vscode
+
+# Drizzle ORM
+src/drizzle/migrations

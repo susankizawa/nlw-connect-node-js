@@ -9,6 +9,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
+import { accessInviteLinkRoute } from './routes/access-invite-link-route'
 import { hello } from './routes/hello-route'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 
@@ -18,7 +19,7 @@ app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
 app.register(fastifyCors, {
-  origin: 'http://localhost:3033',
+  origin: env.FRONTEND_URL,
 })
 
 app.register(fastifySwagger, {
@@ -37,6 +38,7 @@ app.register(fastifySwaggerUi, {
 
 app.register(hello)
 app.register(subscribeToEventRoute)
+app.register(accessInviteLinkRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log(`"Server running in http://localhost:${env.PORT}`)
