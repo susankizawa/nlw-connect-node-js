@@ -11,3 +11,6 @@ package-lock.json
 
 # Drizzle ORM
 src/drizzle/migrations
+
+# Files compiled by tsup
+dist/
