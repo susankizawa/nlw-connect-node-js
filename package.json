@@ -1,11 +1,17 @@
 {
   "name": "js",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
+  "tsup": {
+    "entry": ["src/server.ts"],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch --env-file=.env src/server.ts",
-    "build": "tsup-node"
+    "build": "tsup-node",
+    "start": "npm run build && node dist/server.mjs"
   },
   "keywords": [],
   "author": "",
