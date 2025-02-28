@@ -54,6 +54,11 @@ app.register(getRankingRoute)
 
 // Listening
 
-app.listen({ port: env.PORT }).then(() => {
-  console.log(`"Server running in http://localhost:${env.PORT}`)
-})
+app
+  .listen({
+    host: '0.0.0.0',
+    port: env.PORT,
+  })
+  .then(() => {
+    console.log(`"Server running in http://localhost:${env.PORT}`)
+  })
