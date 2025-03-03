@@ -92,7 +92,7 @@ O backend gerencia as inscrições para o evento e o sistema de indicação, uti
 ## Melhorias futuras
 
 - [ ] Adicionar botões funcionais para compartilhamento em redes sociais
-- [ ] Integrar autenticação OpenAuth na inscrição do evento através das seguintes plataformas:
+- [ ] Integrar autenticação OAuth na inscrição do evento através das seguintes plataformas:
 	- [ ] Discord
 	- [ ] Google
 - [ ] Fazer com que o aplicativo web realmente mande um email para o inscrito
