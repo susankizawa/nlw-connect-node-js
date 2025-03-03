@@ -70,12 +70,14 @@ The backend manages event subscriptions and the referral system, using **Postgre
 
 ## Tecnologies used
 
-- [React](https://react.dev)
-- [Next](https://nextjs.org)
-- [Tailwind](https://tailwindcss.com)
-- [Typescript](https://www.typescriptlang.org)
+- [Fastify](https://fastify.dev)
+- [Cors](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)
+- [Drizzle](https://orm.drizzle.team)
+- [Ioredis](https://github.com/redis/ioredis)
+- [PostgreSQL](https://www.postgresql.org)
 - [Zod](https://zod.dev)
-- [Orval](https://orval.dev)
-- [Vercel](https://vercel.com/home)
+- [Typescript](https://www.typescriptlang.org)
+- [Docker](https://www.docker.com)
+- [Swagger](https://swagger.io)
 
 ## Future improvements
