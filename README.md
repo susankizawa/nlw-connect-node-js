@@ -45,12 +45,28 @@ The backend manages event subscriptions and the referral system, using **Postgre
 ### Docker for Development & Testing
   - Docker is used to quickly spin up **PostgreSQL and Redis containers** in local development and testing environments.  
 
-## Commands for Setup
+## Setup
 
-- `$env:BACKEND_URL=BACKEND_URL; npx orval`: command to update backend API methods on Windows to use the URL <BACKEND_URL>
+- [Docker installation instructions for Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
+- `docker-compose pull` - pulls the latest image for each service defined in `docker-compose.yml`
+- `docker-compose up -d` - starts up all containers for the services you've defined in `docker-compose.yml` in detached mode (runs in the background)
+- `npx drizzle-kit generate` - command to create migration files based on the schema defined in `drizzle.config.ts`.
+- `npx drizzle-kit migrate` - command to apply the generated migrations and create the tables in the database based on the schema
 - `npm install`: command to install project dependencies
 - `npm run dev`: command to start project in development mode
 - `npm run start`: command to start project in production mode
+
+## Additional Commands
+
+- `docker ps` - Lists all running containers. You can use this to get the service names of the containers.
+  
+- `docker exec -it <service_name> psql -h localhost -p 5432 -U docker connect` - Connects to the PostgreSQL Docker container as the user `docker` on the `connect` database in interactive mode. You'll be prompted for a password after running this command.
+
+- `docker exec -it <service_name> redis-cli` - Connects to the Redis Docker container in interactive mode, allowing you to interact with the Redis instance.
+
+### Notes
+- `<service_name>`: Replace this with the actual name or ID of the running service/container (you can get this from `docker ps`).
+- The `-it` flag stands for interactive and terminal, which allows you to interact with the shell of the container.
 
 ## Tecnologies used
 
