@@ -85,7 +85,7 @@ O backend gerencia as inscrições para o evento e o sistema de indicação, uti
 ## Variáveis de ambiente
 
 - `PORT`: a porta em que o servidor irá escutar por requisições
-- `FRONTEND_URL`: URL do frontend para se comunicar com o backend
+- `FRONTEND_URL`: URL do frontend para comunicação com o frontend
 - `POSTGRES_URL`: URL de conexão com o banco de dados PostgreSQL
 - `REDIS_URL`: URL de conexão com o banco de dados Redis
 
