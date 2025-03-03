@@ -81,9 +81,9 @@ The backend manages event subscriptions and the referral system, using **Postgre
 
 ## Environment variables
 
-PORT
-FRONTEND_URL
-POSTGRES_URL
-REDIS_URL
+- `PORT`: the port on which the server will be listening for requests
+- `FRONTEND_URL`: frontend URL that will be used to communicate with the frontend
+- `POSTGRES_URL`: connection URL to connect with the PostgreSQL database
+- `REDIS_URL`: connection URL to connect with the Redis database
 
 ## Future improvements
