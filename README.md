@@ -89,7 +89,7 @@ The backend manages event subscriptions and the referral system, using **Postgre
 ## Future improvements
 
 - [ ] Make functional share in social media buttons
-- [ ] Integrate OpenAuth authentication to event subscription via the following platforms:
+- [ ] Integrate OAuth authentication to event subscription via the following platforms:
 	- [ ] Discord
 	- [ ] Google
 - [ ] Make it actually send an email to the subscriber
